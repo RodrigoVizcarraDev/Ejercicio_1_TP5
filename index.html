@@ -62,13 +62,13 @@
         <hr>
         <section class="container">
             <h2>Ingrese el número</h2>
-            <form>
-                <div class="mb-3">
+            <form id="formulario">
+                <p class="mb-3">
                     <label for="numeroUsuario" class="form-label">
-                        Numero<input type="number" class="form-control" id="numeroUsuario" required>
+                        Numero<input type="number" class="form-control" id="numeroUsuario" required min="1" max="5">
                     </label>
-                </div>     
-                <button onclick="comprobarNumero(event)" type="submit" class="btn btn-primary">Comprobar</button>
+                </p>     
+                <button  type="submit" class="btn btn-primary" id="botonEnviar">Comprobar</button>
             </form>
         </section>
         <hr>
